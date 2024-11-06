@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "autoname": "field:loan_id",
+ "creation": "2024-09-26 13:47:16.370563",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_duyg",
+  "loan_id",
+  "lender_name",
+  "loan_amount",
+  "interest_rate",
+  "column_break_uupn",
+  "loan_start_date",
+  "loan_end_date",
+  "column_break_rqaz",
+  "status",
+  "amended_from",
+  "section_break_mecl",
+  "outstanding_balance",
+  "draws_and_repayments"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_duyg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Company Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "loan_id",
+   "fieldtype": "Data",
+   "label": "Loan ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "lender_name",
+   "fieldtype": "Link",
+   "label": "Lender Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "label": "Loan Amount"
+  },
+  {
+   "fieldname": "loan_start_date",
+   "fieldtype": "Date",
+   "label": "Loan Start Date"
+  },
+  {
+   "fieldname": "loan_end_date",
+   "fieldtype": "Date",
+   "label": "Loan End Date"
+  },
+  {
+   "fieldname": "interest_rate",
+   "fieldtype": "Percent",
+   "label": "Interest Rate"
+  },
+  {
+   "fieldname": "outstanding_balance",
+   "fieldtype": "Currency",
+   "label": "Outstanding Balance"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOutstanding\nPaid Off\nOverpaid"
+  },
+  {
+   "fieldname": "draws_and_repayments",
+   "fieldtype": "Table",
+   "label": "Draws and Repayments",
+   "options": "Draws and Repayments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Company Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_uupn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rqaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mecl",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-26 14:26:00.993066",
+ "modified_by": "Administrator",
+ "module": "Company Loan Management",
+ "name": "Company Loan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
